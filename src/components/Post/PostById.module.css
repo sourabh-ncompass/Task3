@@ -1,0 +1,13 @@
+.main {
+  position: relative;
+  top: 2%;
+  margin: 2px;
+  padding: 10px;
+  /* border: 1px solid white; */
+  height: 80%;
+}
+
+.input {
+  width: 20%;
+  height: 5%;
+}

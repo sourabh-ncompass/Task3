@@ -1,0 +1,45 @@
+.ask-question {
+  height: 20%;
+}
+
+.ask-question > form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 20px; */
+  padding: 0px 20px;
+}
+
+.ask-question input[type=text] {
+  font-size: 3rem;
+  padding: 12px 12px;
+  width: 70%;
+  height: 100%;
+  outline: none;
+  border-radius: 25px;
+  background-color: rgb(223, 223, 223);
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ask-question input[type=text]:focus {
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+
+.ask-question button[type=submit] {
+  background-color: rgb(218, 59, 59);
+  color: rgb(220, 211, 211);
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid rgb(197, 190, 190);
+  transition: 0.2s;
+}
+
+.ask-question button[type=submit]:hover {
+  background-color: rgb(247, 1, 1);
+  cursor: pointer;
+}

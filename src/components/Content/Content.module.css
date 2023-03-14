@@ -1,0 +1,22 @@
+.main {
+  padding: 0px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  width: 100%;
+  height: 60%;
+  overflow: auto;
+}
+
+.noData {
+  position: relative;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  font-size: 5rem;
+  font-family: cursive;
+}
