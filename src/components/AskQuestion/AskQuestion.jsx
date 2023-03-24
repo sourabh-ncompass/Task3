@@ -21,9 +21,19 @@ const AskQuestion = () => {
     setPost((prevState) => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addPost(post);
+    const response = await fetch(`http://localhost:3000/post/create`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({ title: question }),
+    });
+    const { success, message } = await response.json();
+    if (success) alert(message);
+    // addPost(post);
     setPost(data);
   };
 

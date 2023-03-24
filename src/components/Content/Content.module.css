@@ -3,9 +3,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 10%;
+  top: 3%;
   width: 100%;
-  height: 60%;
+  height: 88%;
   overflow: auto;
 }
 
@@ -19,4 +19,16 @@
   height: 50%;
   font-size: 5rem;
   font-family: cursive;
+}
+
+.question {
+  border: 2px double white;
+  width: 50%;
+  position: relative;
+  border-radius: 30px;
+  left: 25%;
+  padding: 10px;
+  margin: 10px;
+  height: 20%;
+  background-color: rgb(86, 84, 84);
 }

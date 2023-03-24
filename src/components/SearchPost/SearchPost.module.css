@@ -1,0 +1,36 @@
+.main {
+  /* border: 1px solid white; */
+  margin: 2px;
+  padding: 10px;
+  position: relative;
+  top: 5%;
+  height: 85%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.main form {
+  /* border: 1px solid white; */
+  margin: 2px 0px;
+  padding: 10px 0px;
+}
+
+#input {
+  margin: auto 30px;
+  padding: 4px;
+}
+
+.post {
+  /* border: 1px solid white; */
+  /* display: flex; */
+}
+
+.item {
+  border-radius: 30px;
+  position: relative;
+  left: 25%;
+  width: 50%;
+  background-color: rgb(61, 60, 60);
+  /* width: 50%; */
+}

@@ -1,5 +1,7 @@
 .ask-question {
   height: 20%;
+  position: relative;
+  top: 5%;
 }
 
 .ask-question > form {

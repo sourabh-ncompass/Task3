@@ -1,0 +1,52 @@
+.main {
+  border: 2px double white;
+  width: 30%;
+  position: relative;
+  border-radius: 60px;
+  left: 35%;
+  padding: 20px;
+  margin: 10px;
+  /* height: 100%; */
+  background-color: rgb(86, 84, 84);
+}
+
+.main:hover {
+  border: 2px solid white;
+  width: 30%;
+  position: relative;
+  border-radius: 60px;
+  left: 35%;
+  padding: 20px;
+  margin: 10px;
+  /* height: 100%; */
+  background-color: rgb(39, 38, 38);
+}
+
+.main form {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+}
+
+.main input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.98);
+}

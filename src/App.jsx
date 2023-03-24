@@ -2,7 +2,13 @@ import { useEffect } from "react";
 import { createContext, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import app from "./App.module.css";
-import { Content, Navbar, PostById, AskQuestion } from "./components";
+import {
+  Content,
+  Navbar,
+  PostById,
+  AskQuestion,
+  SearchPost,
+} from "./components";
 
 const PostContext = createContext({
   postData: [],
@@ -124,7 +130,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<AskQuestion />} />
           <Route path="/posts" element={<Content />} />
-          <Route path="/find-post" element={<PostById />} />
+          <Route path="/find-post" element={<SearchPost />} />
         </Routes>
       </div>
     </PostContext.Provider>
