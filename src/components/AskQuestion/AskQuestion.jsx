@@ -11,6 +11,8 @@ const data = {
   time: "",
 };
 
+const url = "3.26.116.220";
+
 const AskQuestion = () => {
   const [post, setPost] = useState(data);
   const { addPost } = useContext(PostContext);
@@ -23,7 +25,7 @@ const AskQuestion = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:3000/post/create`, {
+    const response = await fetch(`http://${url}:3000/post/create`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import search from "./SearchPost.module.css";
 
+const url = "3.26.116.220";
+
 const SearchPost = () => {
   const [question, setQuestion] = useState("");
   const [post, setPost] = useState([]);
@@ -12,7 +14,7 @@ const SearchPost = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:3000/posts/answers?title=${question}`
+      `http://${url}:3000/posts/answers?title=${question}`
     );
     const data = await response.json();
     setPost(data.data);

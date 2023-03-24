@@ -5,6 +5,7 @@ import { Post } from "../Post/Post";
 import { Menu } from "../Menu/Menu";
 import { Question } from "../Question/Question";
 
+const url = "3.26.116.220";
 const Content = () => {
   // const { postData, bookmark } = useContext(PostContext);
   const [postData, setPostData] = useState([]);
@@ -14,7 +15,7 @@ const Content = () => {
   }, []);
 
   const fetchPost = async () => {
-    const response = await fetch("http://localhost:3000/show-posts");
+    const response = await fetch(`http://${url}:3000/show-posts`);
     const { data } = await response.json();
     setPostData(data);
   };
