@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import question from "./Question.module.css";
 
+const url = "3.26.116.220";
+
 const Question = ({ data }) => {
   const [showPost, setShowPost] = useState(false);
   const [answer, setAnswer] = useState("");
@@ -9,7 +11,7 @@ const Question = ({ data }) => {
   const handleShowPost = () => setShowPost((prevState) => !prevState);
   const handleOnChange = (e) => setAnswer(e.target.value);
   const handleDelete = async () => {
-    const response = await fetch("http://localhost:3000/post/delete", {
+    const response = await fetch(`http://${url}:3000/post/delete`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +29,7 @@ const Question = ({ data }) => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/posts/answer", {
+    const response = await fetch(`http://${url}:3000/posts/answer`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
